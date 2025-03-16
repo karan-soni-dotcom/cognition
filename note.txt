@@ -1,0 +1,8 @@
+1. Make the navbar work on mobile
+2. make the footer for two column approach in mobile for quick links and other links
+3. make headings visible which are not already visible due to color
+
+give only the code that i have to change
+
+...........................
+add some three.js magic 
