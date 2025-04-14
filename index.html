@@ -1,361 +1,542 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-    content="Peak Sales is your trusted partner in driving business growth through expert sales solutions. We help businesses close leads, build high-performing sales teams, and provide strategic support to sell products, services, or courses.">
-  <meta name="author" content="Karan Soni, https://simplisoni.github.io/">
-  <meta name="robots" content="index, follow">
-  <title>Peak Sales | Homepage</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" rel="stylesheet">
-  <link rel="icon" href="assets/images/logo-white.png" type="image/x-icon">
-  <style>
-    .scroll-down {
-      position: absolute;
-      bottom: 2rem;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 2rem;
-      color: rgba(255, 255, 255, 0.85);
-      animation: bounce 2s infinite;
-    }
-
-    .scroll-down a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    @keyframes bounce {
-
-      0%,
-      100% {
-        transform: translate(-50%, 0);
-      }
-
-      50% {
-        transform: translate(-50%, -10px);
-      }
-    }
-
-    .hero-section {
-      padding: 6rem 0;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero-section h1 {
-      font-size: 3.5rem !important;
-      line-height: 1.3;
-      margin-bottom: 1.5rem;
-      color: #ffffff;
-      letter-spacing: -0.02em;
-      font-weight: 700;
-      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    .typing {
-      font-size: inherit;
-      font-weight: inherit;
-      display: inline-block;
-      position: relative;
-    }
-
-    .hero-section p {
-      font-size: 1.2rem;
-      line-height: 1.7;
-      color: rgba(255, 255, 255, 0.9);
-      margin-bottom: 2.5rem;
-      max-width: 600px;
-    }
-
-    .hero-section .btn {
-      padding: 1rem 2.5rem;
-      font-size: 1.1rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    }
-
-    .hero-section .btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-    }
-
-    .hero-section img {
-      border-radius: 20px;
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s ease;
-    }
-
-    .hero-section img:hover {
-      transform: translateY(-5px);
-    }
-
-    @media (max-width: 768px) {
-      .hero-section h1 {
-        font-size: 2.5rem !important;
-      }
-
-      .hero-section p {
-        font-size: 1.1rem;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Anita Soni - Professional coaching and consultation in mental health, parenting, and education">
+    <meta name="keywords" content="mental health coaching, parenting guidance, educational strategies, Anita Soni, holistic development">
+    <meta name="author" content="Anita Soni">
+    <meta property="og:title" content="Anita Soni - Unleash Your True Potential">
+    <meta property="og:description" content="Professional coaching and consultation in mental health, parenting, and education">
+    <meta property="og:image" content="/assets/images/anita-soni-og.jpg">
+    <meta property="og:url" content="https://www.anitasoni.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Anita Soni - Unleash Your True Potential</title>
+    <link rel="icon" type="image/png" href="/assets/favicon.ico">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'" onerror="this.href='/assets/css/bootstrap.min.css';">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
-<body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark">
+<body data-bs-spy="scroll" data-bs-target="#navbarNav">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg" style="background-color: #333; padding: 10px 0;">
     <div class="container">
+      <!-- Logo -->
       <a class="navbar-brand" href="index.html">
-        <img src="assets/images/logo.png" alt="Peak Sales Logo" style="width: 40px; height: 40px; margin-right: 10px;">
-        Peak Sales
+        <img src="assets/images/logo.png" alt="Anita Soni" class="navbar-logo">
       </a>
+  
+      <!-- Mobile Menu Toggle -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+  
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: center;">
+        <ul class="navbar-nav" style="text-align: center;">
+          <li class="nav-item"><a class="nav-link" href="#home" style="color: white;">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about" style="color: white;">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#blog" style="color: white;">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact" style="color: white;">Contact</a></li>
         </ul>
       </div>
     </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="hero-section gradient-bg text-center text-md-start" id="hero-section">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
-          <h1>
-            Climbing Towards <br> <span class="typing"></span> Together
-          </h1>
-          <p class="fade-in">
-            We are a dynamic sales team committed to driving success for businesses by working collaboratively with
-            comprehensive sales solutions. We help our clients achieve their goals through effective results-driven
-            sales strategies.
-          </p>
-          <a href="contact.html" class="btn btn-light btn-lg">Schedule a Call</a>
+</nav>
+    
+<!-- Hero Section -->
+<section id="home" class="hero-section text-center" style="background-image: url('assets/images/hero-bg.png'); background-size: cover; background-position: center; position: relative;">
+    <!-- Overlay to improve text readability -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
+    
+    <div class="container position-relative" style="z-index: 10;">
+        <div class="hero-content">
+            <h1 class="display-4 text-white mb-4">Cognition</h1>
+            
+            <!-- Button moved below the text content -->
+            <a href="#contact" class="btn btn-lg mt-4">Let's Talk Growth</a>
         </div>
-        <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000">
-          <img src="assets/images/hero-bg.png" alt="Peak" class="img-fluid" style="width: 600px; height: 400px;">
-        </div>
-      </div>
     </div>
-  </section>
+</section>
 
-  <!-- Arrow Down Button -->
-  <div class="scroll-down text-center">
-    <a href="#services-section">
-      <i class="bi bi-chevron-down"></i>
-    </a>
-  </div>
-
-  <!-- Services Section -->
-  <section class="services-section" id="services-section">
-    <div class="container">
-      <!-- Left Side: Service Cards -->
-      <div class="services-container">
-        <div class="service-cards">
-          <!-- Service Card 1 -->
-          <div class="service-card" data-service="salesSupport" tabindex="0">
-            <div class="card-content">
-              <div class="icon-wrapper">
-                <i class="fas fa-user-tie" aria-hidden="true"></i>
-              </div>
-              <h3>Sales Team Support</h3>
-              <p>Build and manage high-performing sales teams tailored to your business needs.</p>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="text-center section-title">About Anita Soni</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <div class="about-image">
+                        <img src="/assets/images/anita-soni.jpg" alt="Portrait of Anita Soni, professional coach" class="img-fluid" loading="lazy">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-4">Transforming Lives Through Holistic Growth</h3>
+                    <p>With over 22 years of experience in mental health, parenting, and education, I am dedicated to helping individuals and families unlock their full potential. My approach combines evidence-based strategies with compassionate guidance to create sustainable change.</p>
+                    <p>I believe in the power of integrated wellness – where mental health, parenting skills, and educational approaches work together to create exceptional outcomes. My methodology focuses on building resilience, fostering discipline, and nurturing growth mindsets.</p>
+                    <div class="row mt-4">
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle me-2" style="color: var(--pastel-green);"></i>
+                                <span>Evidence-based strategies</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle me-2" style="color: var(--pastel-green);"></i>
+                                <span>Individualized approaches</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle me-2" style="color: var(--pastel-green);"></i>
+                                <span>Holistic development</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle me-2" style="color: var(--pastel-green);"></i>
+                                <span>Sustainable growth</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-
-          <!-- Service Card 2 -->
-          <div class="service-card" data-service="leadClosing" tabindex="0">
-            <div class="card-content">
-              <div class="icon-wrapper">
-                <i class="fas fa-handshake" aria-hidden="true"></i>
-              </div>
-              <h3>Lead Closing</h3>
-              <p>Expert guidance to close leads effectively and grow your business revenue.</p>
-            </div>
-          </div>
-
-          <!-- Service Card 3 -->
-          <div class="service-card" data-service="trainingPrograms" tabindex="0">
-            <div class="card-content">
-              <div class="icon-wrapper">
-                <i class="fas fa-chalkboard-teacher" aria-hidden="true"></i>
-              </div>
-              <h3>Training Programs</h3>
-              <p>Comprehensive B2C sales training solutions for your team's success.</p>
-            </div>
-          </div>
         </div>
-      </div>
+    </section>
 
-      <!-- Right Side: Content Panel -->
-      <div class="content-panel">
-        <div class="content-wrapper">
-          <!-- Default Content -->
-          <div class="panel-content active" id="defaultContent">
-            <h2>Our Services</h2>
-            <p>Scroll through our services to learn more about how we can help your business grow.</p>
-          </div>
-          <!-- Dynamic Content Panels (populated by JavaScript) -->
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title">Our Services</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="service-card card h-100 p-4">
+                        <div class="service-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Mental Health</h5>
+                            <p class="card-text">Breaking stigmas and fostering resilience through innovative wellness strategies. Our approach focuses on building mental strength and emotional intelligence.</p>
+                            <ul class="list-unstyled text-start mt-3">
+                                <li><i class="fas fa-arrow-right me-2" style="color: var(--accent-color);"></i>Stress management techniques</li>
+                                <li><i class="fas fa-arrow-right me-2" style="color: var(--accent-color);"></i>Anxiety reduction strategies</li>
+                                <li><i class="fas fa-arrow-right me-2" style="color: var(--accent-color);"></i>Emotional regulation skills</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-card card h-100 p-4">
+                        <div class="service-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Parenting</h5>
+                            <p class="card-text">Guiding parents to nurture exceptional potential in their children through balanced discipline and supportive strategies.</p>
+                            <ul class="list-unstyled text-start mt-3">
+                                <li><i class="fas fa-arrow-right me-2" style="color: var(--accent-color);"></i>Positive discipline techniques</li>
+                                <li><i class="fas fa-arrow-right me-2" style="color: var(--accent-color);"></i>Communication strategies</li>
+                                <li><i class="fas fa-arrow-right me-2" style="color: var(--accent-color);"></i>Building growth mindsets</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-card card h-100 p-4">
+                        <div class="service-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Education</h5>
+                            <p class="card-text">Empowering through innovative learning approaches and holistic development strategies that create lifelong learners.</p>
+                            <ul class="list-unstyled text-start mt-3">
+                                <li><i class="fas fa-arrow-right me-2" style="color: var(--accent-color);"></i>Personalized learning plans</li>
+                                <li><i class="fas fa-arrow-right me-2" style="color: var(--accent-color);"></i>Study skills development</li>
+                                <li><i class="fas fa-arrow-right me-2" style="color: var(--accent-color);"></i>Motivation enhancement</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Testimonials Section -->
-  <section class="py-5 bg-light" id="testimonials-section" style="background-color: var(--dark-bg) !important;">
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievement-section">
+        <div class="container">
+            <h2 class="text-center section-title">My Achievements</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="achievement-item">
+                        <div class="achievement-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <div class="achievement-counter" data-target="22">0</div>
+                        <h3>Years Experience</h3>
+                        <p>Dedicated to transforming lives through holistic approaches to mental health, parenting, and education.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="achievement-item">
+                        <div class="achievement-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="achievement-counter" data-target="9337">0</div>
+                        <h3>LinkedIn Followers</h3>
+                        <p>Building a community of professionals and parents dedicated to growth and transformation.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="achievement-item">
+                        <div class="achievement-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <div class="achievement-counter" data-target="500">0</div>
+                        <h3>Professional Connections</h3>
+                        <p>Collaborating with industry leaders to bring cutting-edge strategies to clients worldwide.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonial-section">
     <div class="container">
-      <h2 class="fw-bold text-center mb-4" style="color: var(--light-text);">
-        What Our Clients Say
-      </h2>
-      <div class="row g-4" id="testimonial-container">
-        <!-- Testimonials will be inserted dynamically here -->
-      </div>
+        <h2 class="text-center section-title">Client Testimonials</h2>
+        <div class="testimonial-slider autoplay">
+            <div class="testimonial-card">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <p>Anita's unique approach of blending strictness with kindness has transformed how we view discipline and learning. Our children have shown remarkable improvement in their self-discipline and academic performance.</p>
+                <div class="client-info">
+                    <div class="client-image">
+                        <img src="/assets/images/client1.jpg" alt="Photo of Gautami Seksaria, satisfied client" class="img-fluid" loading="lazy">
+                    </div>
+                    <div class="client-details">
+                        <h5>Gautami Seksaria</h5>
+                        <small>Parent of two</small>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <p>Her dedication to fostering discipline and growth in students is truly remarkable. Anita's strategies have helped our organization implement effective learning programs that have increased student engagement and outcomes.</p>
+                <div class="client-info">
+                    <div class="client-image">
+                        <img src="/assets/images/client2.jpg" alt="Photo of Sriram Ayer, education director" class="img-fluid" loading="lazy">
+                    </div>
+                    <div class="client-details">
+                        <h5>Sriram Ayer</h5>
+                        <small>Education Director</small>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <p>Working with Anita has been transformative for our family. Her holistic approach to mental health and parenting has given us practical tools that we use daily. The results speak for themselves.</p>
+                <div class="client-info">
+                    <div class="client-image">
+                        <img src="/assets/images/client3.jpg" alt="Photo of Priya Sharma, working professional" class="img-fluid" loading="lazy">
+                    </div>
+                    <div class="client-details">
+                        <h5>Priya Sharma</h5>
+                        <small>Working Professional</small>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <p>The strategies Anita taught me for managing stress and anxiety have completely changed my approach to challenges. I'm more resilient and confident in both my personal and professional life.</p>
+                <div class="client-info">
+                    <div class="client-image">
+                        <img src="/assets/images/client4.jpg" alt="Photo of Rahul Mehta, business executive" class="img-fluid" loading="lazy">
+                    </div>
+                    <div class="client-details">
+                        <h5>Rahul Mehta</h5>
+                        <small>Business Executive</small>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </section>
+</section>
 
-  <!-- Call-to-Action Section -->
-  <section class="cta-section gradient-bg" id="cta-section">
-    <div class="container">
-      <h2 class="fw-bold text-center mb-4">Ready to Boost Your Sales?</h2>
-      <div class="text-center">
-        <a href="contact.html" class="btn btn-light btn-lg mt-3">Contact Us</a>
-      </div>
-    </div>
-  </section>
+<!-- Include Slick.js & jQuery -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
 
-  <!-- Footer -->
-  <footer>
-    <div class="footer-container">
-      <!-- Company Overview Section -->
-      <div class="footer-section company-overview">
-        <a href="index.html">
-          <img src="assets/images/logo-white.png" alt="Peak Sales Logo" class="footer-logo"
-            style="width: 40px; height: 40px; margin-right: 10px;">
-        </a>
-      </div>
-
-      <!-- Quick Links Section -->
-      <div class="footer-section quick-links">
-        <h4 class="footer-heading">Quick Links</h4>
-        <ul class="footer-list">
-          <li><a href="index.html#services-section">Services</a></li>
-          <li><a href="contact.html#contact-form-section">Send Us a Message</a></li>
-          <li><a href="index.html">Home</a></li>
-        </ul>
-      </div>
-
-      <!-- Contact and Social Links Section -->
-      <div class="footer-section contact-social">
-        <h4 class="footer-heading">Connect with Us</h4>
-        <ul class="footer-list">
-          <li><a href="mailto:peaksales.in@gmail.com" aria-label="Email us" target="_blank">Email Us</a></li>
-          <li><a href="https://www.instagram.com/peaksales.in" target="_blank" rel="noopener noreferrer"
-              aria-label="Instagram">Instagram</a></li>
-          <li><a href="https://www.linkedin.com/company/peaksales/" target="_blank" rel="noopener noreferrer"
-              aria-label="LinkedIn">LinkedIn</a></li>
-        </ul>
-      </div>
-
-      <!-- Legal Section -->
-      <div class="footer-section legal">
-        <h4 class="footer-heading">Legal</h4>
-        <ul class="footer-list">
-          <li><a href="privacy-policy.html">Privacy Policy</a></li>
-          <li><a href="terms-of-service.html">Terms of Service</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="footer-bottom text-center">
-      <p>&copy; 2024 Peak Sales. All Rights Reserved.</p>
-    </div>
-  </footer>
-
-  <!-- Easter egg game container -->
-  <div id="easter-egg-container"
-    style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); z-index: 9999; align-items: center; justify-content: center;">
-    <iframe src="dino/index.html" width="800" height="300" style="border: none;"></iframe>
-  </div>
-
-  <!-- Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-  <script>
-    // Initialize AOS
-    AOS.init();
-
-    // GSAP Animations
-    gsap.registerPlugin(ScrollTrigger);
-
-    // Hero Section Animation
-    gsap.to("#hero-section", {
-      opacity: 1,
-      y: 0,
-      duration: 1,
-      scrollTrigger: {
-        trigger: "#hero-section",
-        start: "top 80%",
-      },
-    });
-
-    // Testimonials Animation
-    gsap.utils.toArray(".testimonial-card").forEach((card, index) => {
-      gsap.to(card, {
-        opacity: 1,
-        y: 0,
-        duration: 1,
-        delay: index * 0.2,
-        scrollTrigger: {
-          trigger: card,
-          start: "top 90%",
-        },
+<!-- Initialize Slick Slider -->
+<script>
+    $(document).ready(function(){
+      $('.autoplay').slick({
+        slidesToShow: 2,  
+        slidesToScroll: 1,
+        autoplay: true,  
+        autoplaySpeed: 3000, // Slower slide speed (3 seconds per slide)
+        speed: 800, // Smooth transition (slower movement)
+        dots: true,  
+        arrows: false,  
+        infinite: true,
+        pauseOnHover: false, 
+        pauseOnFocus: false, 
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1  
+            }
+          }
+        ]
       });
     });
+    </script>    
 
-    // CTA Section Animation
-    gsap.to("#cta-section", {
-      opacity: 1,
-      y: 0,
-      duration: 1,
-      scrollTrigger: {
-        trigger: "#cta-section",
-        start: "top 80%",
-      },
-    });
+    <!-- Blog Section -->
+    <section id="blog" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title">Latest Insights</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <img src="/assets/images/blog1.jpg" alt="Building resilience in uncertain times" class="img-fluid" loading="lazy">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar"></i> March 10, 2025</span>
+                                <span class="ms-3"><i class="far fa-folder"></i> Mental Health</span>
+                            </div>
+                            <h5>Building Resilience in Uncertain Times</h5>
+                            <p>Discover practical strategies to develop mental strength and emotional resilience during challenging periods.</p>
+                            <a href="/blog/building-resilience" class="read-more">Read More <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <img src="/assets/images/blog2.jpg" alt="Effective communication with teenagers" class="img-fluid" loading="lazy">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar"></i> March 5, 2025</span>
+                                <span class="ms-3"><i class="far fa-folder"></i> Parenting</span>
+                            </div>
+                            <h5>Effective Communication with Teenagers</h5>
+                            <p>Learn how to maintain open lines of communication and build trust with your adolescent children.</p>
+                            <a href="/blog/communication-teenagers" class="read-more">Read More <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <img src="/assets/images/blog3.jpg" alt="Fostering a growth mindset in learning" class="img-fluid" loading="lazy">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar"></i> February 28, 2025</span>
+                                <span class="ms-3"><i class="far fa-folder"></i> Education</span>
+                            </div>
+                            <h5>Fostering a Growth Mindset in Learning</h5>
+                            <p>Explore ways to develop a love for learning and help children embrace challenges as opportunities.</p>
+                            <a href="/blog/growth-mindset-learning" class="read-more">Read More <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="/blog" class="btn" style="background-color: var(--pastel-green); color: var(--dark-gray);">View All Articles</a>
+            </div>
+        </div>
+    </section>
 
-    // Updated Typing Animation
-    var typed = new Typed(".typing", {
-      strings: ["Success", "Victory", "Peak", "Win"],
-      typeSpeed: 100,
-      backSpeed: 80, // Slightly slower backspace effect
-      loop: true,
-      smartBackspace: true,
-      showCursor: true,
-      cursorChar: '|',
-      autoInsertCss: true,
-    });
-  </script>
-  <script src="assets/js/scripts.js" defer></script>
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="mb-4">Ready to Transform Your Life?</h2>
+            <p>Take the first step towards unlocking your true potential. Schedule a consultation today and discover personalized strategies for mental health, parenting, and educational success.</p>
+            <a href="#contact" class="btn cta-btn">Get Started Today</a>
+        </div>
+    </section>
+
+<!-- Contact Form Section -->
+<section id="contact-form-section" class="contact-section">
+    <div class="container">
+      <h2 class="text-center section-title">Send Us a Message</h2>
+      <div class="row">
+        <!-- Contact Form -->
+        <div class="col-lg-6">
+          <div class="contact-form">
+            <form name="submit-to-google-sheet" id="contactForm">
+              <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email address">
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">Your Phone Number</label>
+                <input type="tel" id="phone" name="phone" class="form-control" placeholder="Enter your phone number" required pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number" maxlength="10">
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" name="message" class="form-control" rows="5" placeholder="Type your message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary submit-btn">Submit Message</button>
+            </form>
+  
+            <!-- Success & Error Messages -->
+            <div id="successmsg" class="alert alert-success mt-3" hidden>
+              <strong>Success!</strong> Your message has been sent.
+            </div>
+            <div id="errormsg" class="alert alert-danger mt-3" hidden>
+              <strong>Error!</strong> There was an error sending your message.
+            </div>
+          </div>
+        </div>
+
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyJrTSBrZ15F3UWCV4x_zPm0J3pB8jgopMQNMQLf1KeJ4CExwKhjv1P60E17VoXoOECxQ/exec';
+            const form = document.forms['submit-to-google-sheet'];
+            const successmsg = document.getElementById('successmsg');
+            const errormsg = document.getElementById('errormsg');
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault();
+          
+              const phoneInput = document.getElementById('phone');
+              const phonePattern = /^[0-9]{10}$/;
+          
+              if (!phonePattern.test(phoneInput.value)) {
+                alert('Please enter a valid 10-digit phone number.');
+                return;
+              }
+          
+              fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                  if (response.ok) {
+                    successmsg.hidden = false;
+                    errormsg.hidden = true;
+                    form.reset();
+                  } else {
+                    errormsg.hidden = false;
+                    successmsg.hidden = true;
+                  }
+                })
+                .catch(error => {
+                  console.error('Error!', error);
+                  errormsg.hidden = false;
+                  successmsg.hidden = true;
+                });
+            });
+          </script>
+          
+  
+        <!-- Contact Info -->
+        <div class="col-lg-6">
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="contact-text"><h5>Location</h5><p>Chennai, Tamil Nadu, India</p></div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div class="contact-text"><h5>Email</h5><p>anitha.soni@gmail.com</p></div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+              <div class="contact-text"><h5>Phone</h5><p>+91 9840299668</p></div>
+            </div>
+            <div class="social-links mt-4">
+              <a href="https://www.instagram.com/mentalhealthcognition" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+              <a href="https://m.youtube.com/@Cognition_unleashyourpotential" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+              <a href="https://linkedin.com/in/anita-soni-150868b3" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+<!-- Footer -->
+<footer>
+    <div class="footer-container">
+      <!-- Company Logo -->
+      <div class="footer-section footer-logo">
+        <a href="index.html">
+          <img src="assets/images/logo.png" alt="Anita Soni" class="footer-logo-img">
+        </a>
+      </div>
+  
+      <!-- Quick Links Section -->
+      <div class="footer-section">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-list" style="list-style: none; padding: 0;">
+          <li><a href="#home" style="color: white; text-decoration: none; transition: color 0.3s ease;" onmouseover="this.style.color='#f4a261'" onmouseout="this.style.color='white'">Home</a></li>
+          <li><a href="#about" style="color: white; text-decoration: none; transition: color 0.3s ease;" onmouseover="this.style.color='#f4a261'" onmouseout="this.style.color='white'">About</a></li>
+          <li><a href="#blog" style="color: white; text-decoration: none; transition: color 0.3s ease;" onmouseover="this.style.color='#f4a261'" onmouseout="this.style.color='white'">Blog</a></li>
+          <li><a href="#contact" style="color: white; text-decoration: none; transition: color 0.3s ease;" onmouseover="this.style.color='#f4a261'" onmouseout="this.style.color='white'">Contact</a></li>
+        </ul>
+      </div>
+  
+      <!-- Other Links Section -->
+      <div class="footer-section">
+        <h4 class="footer-heading">Other Links</h4>
+        <ul class="footer-list" style="list-style: none; padding: 0;">
+          <li><a href="#services" style="color: white; text-decoration: none; transition: color 0.3s ease;" onmouseover="this.style.color='#f4a261'" onmouseout="this.style.color='white'">Services</a></li>
+          <li><a href="#achievements" style="color: white; text-decoration: none; transition: color 0.3s ease;" onmouseover="this.style.color='#f4a261'" onmouseout="this.style.color='white'">Achievements</a></li>
+          <li><a href="#testimonials" style="color: white; text-decoration: none; transition: color 0.3s ease;" onmouseover="this.style.color='#f4a261'" onmouseout="this.style.color='white'">Testimonials</a></li>
+        </ul>
+      </div>
+  
+      <!-- Contact and Social Links -->
+      <div class="footer-section">
+        <h4 class="footer-heading">Connect with Us</h4>
+        <ul class="footer-list" style="list-style: none; padding: 0;">
+          <li><a href="mailto:anitha.soni@gmail.com" style="color: white; text-decoration: none; transition: color 0.3s ease;" onmouseover="this.style.color='#f4a261'" onmouseout="this.style.color='white'" aria-label="Email us" target="_blank">Email Us</a></li>
+          <li><a href="https://www.instagram.com/mentalhealthcognition/" style="color: white; text-decoration: none; transition: color 0.3s ease;" onmouseover="this.style.color='#f4a261'" onmouseout="this.style.color='white'" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a></li>
+          <li><a href="https://www.linkedin.com/in/anita-soni-150868b3" style="color: white; text-decoration: none; transition: color 0.3s ease;" onmouseover="this.style.color='#f4a261'" onmouseout="this.style.color='white'" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+  
+    <!-- Footer Bottom -->
+    <div class="footer-bottom" style="color: white;">
+      <p>&copy; 2025 Anita Soni. All Rights Reserved.</p>
+    </div>
+</footer>
+  
+    <!-- Back to Top Button -->
+    <button id="backToTop" title="Back to Top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_GA_ID"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcVV8Qyq46cDfL" crossorigin="anonymous" defer></script>
+    <script src="scripts.js"></script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Anita Soni",
+        "jobTitle": "Professional Coach and Consultant",
+        "url": "https://www.anitasoni.com",
+        "sameAs": [
+            "https://www.instagram.com/mentalhealthcognition",
+            "https://m.youtube.com/@Cognition_unleashyourpotential",
+            "linkedin.com/in/anita-soni-150868b3",
+        ],
+        "description": "Transforming lives through holistic approaches to mental health, parenting, and education."
+    }
+    </script>
 </body>
-
 </html>
